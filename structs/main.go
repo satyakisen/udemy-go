@@ -32,6 +32,6 @@ func (p person) print() {
 	fmt.Printf("%+v\n", p)
 }
 
-func (p person) updateName(newName string) {
-	p.firstName = newName
+func (p *person) updateName(newName string) {
+	(*p).firstName = newName
 }
